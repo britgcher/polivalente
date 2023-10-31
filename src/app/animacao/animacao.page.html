@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar  [@openClose]="isOpen ? 'open' : 'closed'" >
+    <ion-title>animacao</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" 
+[scrollEvents] = "true"
+[ionScroll] = "setPosicao($any($event))"
+>
+
+<ion-row>
+  <ion-col>
+    <ion-button (click)="toggle(@openClose)"> botao exemplo</ion-button>
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>
+    <ion-button [@botaoFade]="fade ? 'fadeIn : 'fadeOut'"
+    (click)="setFade()"
+    > botao exemplo</ion-button>
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>
+    <ion-button> botao exemplo</ion-button>
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>
+    <ion-button> botao exemplo</ion-button>
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>
+    <ion-button> botao exemplo</ion-button>
+  </ion-col>
+</ion-row>
+</ion-content>
