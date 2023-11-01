@@ -2,22 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-
 import { IonicModule } from '@ionic/angular';
 
-import { AnimacaoPageRoutingModule } from './animacao-routing.module';
+import { CadastroPageRoutingModule } from './cadastro-routing.module';
 
-
-import { AnimacaoPage } from './animacao.page';
+import { CadastroPage } from './cadastro.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AnimacaoPageRoutingModule,
-   
+    CadastroPageRoutingModule
   ],
-  declarations: [AnimacaoPage]
+  declarations: [CadastroPage]
 })
-export class AnimacaoPageModule {}
+export class CadastroPageModule {}
