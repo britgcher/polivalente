@@ -1,10 +1,66 @@
 <ion-content [fullscreen]="true">
   <ion-row class="ion-justify-content-center" id="banner">
     <ion-col size="12" size-md="12" size-lg="12" class="ion-text-center full-height">
-   
-      <app-header></app-header>
+     <ion-header collapse="fade">
+
+        <!-- HEADER -->
+        <ion-row class="ion-align-items-center">
+         <ion-col>
+           <img srcset="../../assets/polivalente.png" width="70px" height="70px" id="logo" routerLink="/home">
+           <h1 id="titulo">SEM AÇÚCAR</h1>
+           </ion-col>
+        
+           <ion-col>
+           <ion-searchbar show-cancel-button="never" animated="true" placeholder="Pesquisar..." class="custom"
+           ></ion-searchbar>
+         </ion-col>
+
+         <ion-col>
+           <a>
+           <ion-icon name="person-circle-outline" id="perfil" routerLink="/login"></ion-icon>
+         </a>
+         </ion-col>
+
+       </ion-row>
+     </ion-header>
 
 
+
+     <!-- OPÇOES -->
+
+     <ion-row class="ion-align-items-center" id="segundoheader">
+       <ion-content id="tres-tracinho">
+         <ion-buttons slot="start">
+           <ion-menu-button auto-hide="false" menu="main-menu"></ion-menu-button>
+         </ion-buttons>
+         <ion-title>Menu Button</ion-title>
+       </ion-content>
+       <ion-col>
+         <ion-button routerLink="/semgluten">
+           <h2>Sem Gluten</h2>
+           <img src="../assets/gluten.png" id="gluten">
+         </ion-button>
+       </ion-col>
+       <ion-col>
+         <ion-button routerLink="/semlactose">
+           <h2>Sem Lactose</h2>
+           <img src="../assets/lactose.png" id="lactose">
+         </ion-button>
+       </ion-col>
+       <ion-col>
+         <ion-button routerLink="/semacucar">
+           <h2>Sem Açúcar</h2>
+           <img src="../assets/açucar.png" id="acucar">
+         </ion-button>
+       </ion-col>
+       <ion-col>
+         <ion-button routerLink="/lowcarb">
+           <h2>Low Carb</h2>
+           <img src="../assets/carboidrato.png" id="carboidrato">
+         </ion-button>
+       </ion-col>
+     </ion-row>
+     
      <!-- DIVIDER -->
      <ion-row class="align-items-center" id="espacamento">
        <ion-col></ion-col>
@@ -125,3 +181,4 @@
          </ion-row>
 
 </ion-content>
+

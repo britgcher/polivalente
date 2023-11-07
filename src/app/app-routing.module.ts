@@ -10,7 +10,8 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-  },  {
+  },
+  {
     path: 'cadastro',
     loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
   },
@@ -21,7 +22,17 @@ const routes: Routes = [
   {
     path: 'lowcarb',
     loadChildren: () => import('./lowcarb/lowcarb.module').then( m => m.LowcarbPageModule)
-  }
+  },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
+  {
+    path: 'semacucar',
+    loadChildren: () => import('./semacucar/semacucar.module').then( m => m.SemacucarPageModule)
+  },
+  
+   
 
 
 ];
