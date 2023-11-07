@@ -1,137 +1,50 @@
-<!-- <ion-content [fullscreen]="true">
-  <ion-row class="ion-justify-content-center" id="banner">
-    <ion-col size="12" size-mg="12" size-lg="12" class="ion-text-center full-height">
-      <ion-header collapse="fade"></ion-header> -->
-
-      <!-- eve -->
-      <!-- <ion-row class="ion-justify-content-center align-items-center" id="elementos-banner"> 
-
-        <ion-col>
-          <h1 id="titulo">Cadastro</h1>
-
-          <div container>
-            <ion-item id="caixa" lines="none">
-              <ion-input
-                label="E-mail"
-                labelPlacement="stacked"
-                clearInput="true"
-                placeholder="Insira seu endereço de email"
-              ></ion-input>
-            </ion-item>
-
-            <ion-item id="caixa" lines="none">
-              <ion-input
-                label="Nome"
-                labelPlacement="stacked"
-                [clearInput]="true"
-                placeholder="Insira seu nome de usuário"
-              ></ion-input>
-            </ion-item>
-
-            <ion-item id="caixa" lines="none">
-              <ion-input
-                label="Número de telefone"
-                labelPlacement="stacked"
-                [clearInput]="true"
-                placeholder="Insira seu número de telefone"
-              ></ion-input>
-            </ion-item>
-
-            <ion-item id="caixa" lines="none">
-              <ion-input
-                label="Senha"
-                labelPlacement="stacked"
-                type="password"
-                placeholder="Crie sua senha"
-              ></ion-input>
-            </ion-item>
-          </div>
-
-          <ion-button routerLink="/home">Confirmar</ion-button>
-        </ion-col>
-
-        <ion-col id="col-lado-direito">
-          <img src="../assets/polivalente.png" id="logo">
-          <h2 id="titulo">Qualidade sem restrições</h2>
-
-          <p>Já possui uma conta? Faça já o login aqui!</p>
-
-          <ion-button routerLink="/cadastro">Login</ion-button>
-        </ion-col>
-
-      </ion-row>
-    </ion-col>
-  </ion-row>
-</ion-content> -->
 
 <ion-content [fullscreen]="true">
 
   <!-- Row para o banner -->
-  <ion-row class="ion-justify-content-center" id="banner">
+  <ion-row class="ion-justify-content-center ion-no-padding" id="banner">
 
     <!-- Coluna para a seção esquerda do banner -->
     <ion-col size="12" size-mg="12" size-lg="12" class="ion-text-center full-height">
-      <ion-header collapse="fade"></ion-header> 
-
+      <ion-header collapse="fade">
+      </ion-header>
 
       <!-- Row para elementos do banner -->
       <ion-row class="ion-justify-content-center align-items-center" id="elelentos-banner">
-    
-         <!-- Coluna para o lado esquerdo do banner -->
-          <ion-col id="col-lado-esquerdo">
-            <h1 id="titulo">Cadastro</h1>
-  
-            <div container>
-              <ion-item id="caixa-cadastro" lines="none">
-                <ion-input
-                  label="E-mail"
-                  labelPlacement="stacked"
-                  clearInput="true"
-                  placeholder="Insira seu endereço de email"
-                ></ion-input>
-              </ion-item>
-  
-              <ion-item id="caixa-cadastro" lines="none">
-                <ion-input
-                  label="Nome"
-                  labelPlacement="stacked"
-                  [clearInput]="true"
-                  placeholder="Insira seu nome de usuário"
-                ></ion-input>
-              </ion-item>
-  
-              <ion-item id="caixa-cadastro" lines="none">
-                <ion-input
-                  label="Número de telefone"
-                  labelPlacement="stacked"
-                  [clearInput]="true"
-                  placeholder="Insira seu número de telefone"
-                ></ion-input>
-              </ion-item>
-  
-              <ion-item id="caixa-cadastro" lines="none">
-                <ion-input
-                  label="Senha"
-                  labelPlacement="stacked"
-                  type="password"
-                  placeholder="Crie sua senha"
-                ></ion-input>
-              </ion-item>
-            </div>
-  
-            <!-- routerlink -->
-            <ion-button routerLink="/home">Confirmar</ion-button>
-          </ion-col>
 
-        <!-- Coluna para o lado direito do banner -->
-        <ion-col id="col-lado-direito">
+        <!-- Coluna para o lado esquerdo do banner -->
+        <ion-col id="col-lado-esquerdo">
           <img src="assets/polivalente.png" id="logo">
           <h2 id="titulo">Qualidade sem restrições</h2>
 
           <p class="naotemumaconta">Não tem uma conta? Crie aqui!!</p>
 
           <!-- Botão para o link de cadastro -->
-          <ion-button routerLink="/login">Cadastro</ion-button>
+          <ion-button routerLink="/cadastro">Cadastro</ion-button>
+        </ion-col>
+
+        <!-- Coluna para o lado direito do banner -->
+        <ion-col id="col-lado-direito">
+          <h1 id="titulo">Login</h1>
+
+          <!-- Container para os campos de entrada de dados -->
+          <div container>
+            <!-- Campo de entrada para o e-mail -->
+            <ion-item id="caixa-cadastro" lines="none">
+              <ion-input label="E-mail" labelPlacement="stacked" clearInput="true"
+                placeholder="Insira seu endereço de email">
+              </ion-input>
+            </ion-item>
+
+            <!-- Campo de entrada para a senha -->
+            <ion-item id="caixa-cadastro" lines="none">
+              <ion-input label="Senha" labelPlacement="stacked" type="password" placeholder="Crie sua senha">
+              </ion-input>
+            </ion-item>
+          </div>
+
+          <!-- Botão para confirmar o login -->
+          <ion-button routerLink="/home">Confirmar</ion-button>
         </ion-col>
 
         <ion-footer class="footer"> Polivalente</ion-footer>

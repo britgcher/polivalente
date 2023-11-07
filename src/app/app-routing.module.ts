@@ -17,6 +17,10 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'lowcarb',
+    loadChildren: () => import('./lowcarb/lowcarb.module').then( m => m.LowcarbPageModule)
   }
 
 
