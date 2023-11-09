@@ -4,6 +4,7 @@
     border: 0;
     overflow: hidden;
     box-shadow: none;
+    outline: 1px solid red;
 }
 
 :root {
@@ -25,6 +26,10 @@ ion-header {
     background: linear-gradient(90deg, rgba(189,136,253,1) 35%, rgba(239,228,246,1) 100%);
     width: 100%;
     height: 10vh;
+}
+
+ion-col{
+    color: #473BA3;
 }
 
 ion-searchbar.custom {
@@ -203,6 +208,29 @@ ion-icon {
     color: #473BA3;
 }
 
+.filtrar{
+    height:67vh;
+}
+
+.filtrarbotao{
+    width:3vw;
+    height:4vh;
+    margin:9px;
+    transition: 0.5s;
+    --moz-transform: scale(1.1);
+    --webkit-transition: all 0.2s;
+}
+
+.filtrarbotao:hover{
+    width: 45%;
+    text-align: start;
+    border-radius: 120px;
+    transition: 0.4s;
+    --moz-transform: scale(1.1);
+    --webkit-transition: all 0.2s;
+}
+
+
 /* LISTA RECEITAS */
 #listareceitas {
     --width: auto;
@@ -357,84 +385,7 @@ ion-title {
     font-weight: bold;
 }
 
-/* carousel */
-#caro {
-    margin: 1%;
-    height: 20vh;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
 
-.wrapper {
-    width: 90%;
-    max-width: 90%;
-    justify-content: center;
-    align-items: center;
-}
-
-.wrapper i {
-    cursor: pointer;
-    position: absolute;
-    color: rgb(43, 20, 65);
-}
-
-.wrapper i:hover {
-    background: #d5b2e4;
-}
-
-.wrapper i:first-child {
-    left: -23px;
-}
-
-.wrapper i:last-child {
-    right: -23px;
-}
-
-.wrapper .carousel {
-    white-space: nowrap;
-    font-size: 0px;
-    cursor: pointer;
-    overflow: hidden;
-}
-
-.carousel .dragging {
-    cursor: grab;
-}
-
-.carousel .dragging img {
-    pointer-events: none;
-}
-
-.carousel img {
-    height: 250px;
-    width: calc(100% / 3);
-    object-fit: cover;
-    padding: 4px;
-    margin-left: 14px;
-}
-
-.carousel img:first-child {
-    margin-left: 0px;
-}
-
-@media screen and (max-width: 900px) {
-    .carousel img {
-        width: calc(100% / 2);
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .carousel img {
-        width: 100%;
-    }
-}
-
-#left,
-#right {
-    width: 5%;
-    height: auto;
-}
 
 /* card receitas */
 ion-modal {
@@ -488,18 +439,72 @@ ion-modal {
     /* Estilos para a versão celular */
     .imagens img {
       width: 100%;
-      max-width: none;
     }
 
+    .filtrar{
+        height:190vh;
+    }
+    
+    .filtrarbotao{
+        width:3vw;
+        height:4vh;
+        margin:9px;
+        transition: 0.5s;
+        --moz-transform: scale(1.1);
+        --webkit-transition: all 0.2s;
+    }
+    
+    .filtrarbotao:hover{
+        width: 45%;
+        text-align: start;
+        border-radius: 120px;
+        transition: 0.4s;
+        --moz-transform: scale(1.1);
+        --webkit-transition: all 0.2s;
+    }
+
+    .filter-box {
+        display: block;
+      }
+    
+      .filter-box.hidden {
+        display: none;
+      }
   }
   
   @media (min-width: 769px) and (max-width: 1024px) {
     /* Estilos para a versão tablet */
     .imagens img {
-      width: 48%;
-      margin: 1%;
+      width: 50%;
+      margin: 5%;
       max-width: none;
     }
+
+    .imagens img {
+        width: 100%;
+      }
+  
+      .filtrar{
+          height:211vh;
+      }
+      
+      .filtrarbotao{
+          width:3vw;
+          height:4vh;
+          margin:9px;
+          transition: 0.5s;
+          --moz-transform: scale(1.1);
+          --webkit-transition: all 0.2s;
+      }
+      
+      .filtrarbotao:hover{
+          width: 45%;
+          text-align: start;
+          border-radius: 120px;
+          transition: 0.4s;
+          --moz-transform: scale(1.1);
+          --webkit-transition: all 0.2s;
+      }
   }
   
   @media (min-width: 1025px) {
@@ -511,13 +516,4 @@ ion-modal {
     }
   }
 
-  @media (max-width: 768px) {
-    .filter-box {
-      display: block;
-    }
-  
-    .filter-box.hidden {
-      display: none;
-    }
-  }
-  
+ 

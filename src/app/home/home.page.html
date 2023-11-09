@@ -9,16 +9,16 @@
      <ion-row class="align-items-center" id="espacamento">
        <ion-col></ion-col>
        <ion-col size="3" id="divider"></ion-col>
-       <ion-col size="3" id="destaques">Receitas</ion-col>
+       <ion-col size="3" id="destaques">Receitagggggs</ion-col>
        <ion-col size="3" id="divider"></ion-col>
        <ion-col></ion-col>
      </ion-row>
      
      <!-- RECEITAS -->
-     <ion-row class= "ion-justify-content-center ion-align-items-center">
-       <ion-col size="2"></ion-col>
-       <ion-col size="1"></ion-col>
-       <ion-col size="6">
+     <!-- <ion-row class= "ion-justify-content-center ion-align-items-center">
+       <ion-col size-sm="0" size-md="0" size-lg="3" size-xl="3">anuncio</ion-col>
+       <ion-col size="1">void</ion-col>
+       <ion-col size-sm="10" size-md="10" size-lg="6" size-xl="6">
          <div class="imagens">
            <ng-container *ngFor="let receita of this.receitas">
              <img src="{{receita.src}}" (click)="setOpen(true, receita)" expand="block" class="imgrec">
@@ -43,7 +43,7 @@
              </ng-template>
            </ion-modal>
          </div>
-       </ion-col>
+       </ion-col> -->
         
        <!-- FILTRAGEM -->
        
@@ -75,12 +75,58 @@
         
        </ion-col> -->
 
-       <ion-col class="ion-justify-content-start ion-align-items-start" size="1">
-        <ion-button><ion-icon name="filter-outline"></ion-icon>
+
+       <ion-row class="ion-justify-content-center">
+        <ion-col size="10" size-lg="4" class="ion-text-center">
+          <p>Receita</p>
+        </ion-col>
+       </ion-row>
+
+       <ion-row class="ion-justify-content-center">
+        <ion-col size="12" size-lg="10" class="ion-align-items-center ion-text-center">
+
+          <ion-row class="ion-justify-content-center">
+           
+            <ion-col size="12" size-md="10" size-lg="10" size-xl="10" class=" ion-align-items-center ion-text-center">
+              <div class="imagens">
+                <ng-container *ngFor="let receita of this.receitas">
+                  <img src="{{receita.src}}" (click)="setOpen(true, receita)" expand="block" class="imgrec">
+                </ng-container>
+          
+                <ion-modal [isOpen]="isModalOpen" (willDismiss)="onWillDismiss($event)">
+                  <ng-template>
+                    <ion-item button="true" detail="false" (click)="setOpen(false, null)" class="cardzin" lines="none" routerLink="/receita">
+                      <img src="{{this.receita_selecionada.src}}" class="imgrec">
+                      <ion-col size="7">
+                        <h5 class="nomerec">{{this.receita_selecionada.nomerec}}</h5>
+                        <h4>{{this.receita_selecionada.descricao}}</h4>
+                      </ion-col>
+                      <ion-col size="2" class="colcard">
+                        <div class="restri">
+                          <ng-container *ngFor="let botao of this.receita_selecionada.restricoes">
+                            <img src="{{ botao }}" class="iconsrestr">
+                          </ng-container>
+                        </div>
+                      </ion-col>
+                    </ion-item>
+                  </ng-template>
+                </ion-modal>
+              </div>
+            </ion-col>
+
+          
+
+           </ion-row>
+         
+        </ion-col>
+       </ion-row>
+<!-- 
+       <ion-col class="filtrar" size="1">
+        <ion-button class="filtrarbotao">
         </ion-button>
        </ion-col>
-         <ion-col size="2"></ion-col>
-     </ion-row>
+         <ion-col size-sm="0" size-md="0" size-lg="3" size-xl="3" >anuncio</ion-col>
+     </ion-row> -->
   
 
 
