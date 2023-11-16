@@ -167,7 +167,6 @@ ion-button:hover+#acucar {
 #espacamento {
     margin: 1%;
     height: 10vh;
-    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -182,12 +181,6 @@ ion-button:hover+#acucar {
     font-size: 20px;
 }
 
-#imagem1,
-#imagem2,
-#imagem3 {
-    margin: 10px;
-    padding: 10px;
-}
 
 #carddestaques {
     width: 950px;
@@ -403,13 +396,22 @@ ion-modal {
     --background: #D0BCE8;
 }
 
-.imgrec {
-    width: 15vw;
-    height: 20vh;
-    margin: 1%;
+.imgreceitas {
+    width: 20vw;
+    height: 25vh;
+    margin: 20px;
 }
 
-.colcard {
+#imagens{
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+
+
+  .colcard {
     height: 90%;
     float: right;
 }
@@ -434,86 +436,3 @@ ion-modal {
     width: 40%;
     margin: 5%;
 }
-
-@media (max-width: 768px) {
-    /* Estilos para a versão celular */
-    .imagens img {
-      width: 100%;
-    }
-
-    .filtrar{
-        height:190vh;
-    }
-    
-    .filtrarbotao{
-        width:3vw;
-        height:4vh;
-        margin:9px;
-        transition: 0.5s;
-        --moz-transform: scale(1.1);
-        --webkit-transition: all 0.2s;
-    }
-    
-    .filtrarbotao:hover{
-        width: 45%;
-        text-align: start;
-        border-radius: 120px;
-        transition: 0.4s;
-        --moz-transform: scale(1.1);
-        --webkit-transition: all 0.2s;
-    }
-
-    .filter-box {
-        display: block;
-      }
-    
-      .filter-box.hidden {
-        display: none;
-      }
-  }
-  
-  @media (min-width: 769px) and (max-width: 1024px) {
-    /* Estilos para a versão tablet */
-    .imagens img {
-      width: 50%;
-      margin: 5%;
-      max-width: none;
-    }
-
-    .imagens img {
-        width: 100%;
-      }
-  
-      .filtrar{
-          height:211vh;
-      }
-      
-      .filtrarbotao{
-          width:3vw;
-          height:4vh;
-          margin:9px;
-          transition: 0.5s;
-          --moz-transform: scale(1.1);
-          --webkit-transition: all 0.2s;
-      }
-      
-      .filtrarbotao:hover{
-          width: 45%;
-          text-align: start;
-          border-radius: 120px;
-          transition: 0.4s;
-          --moz-transform: scale(1.1);
-          --webkit-transition: all 0.2s;
-      }
-  }
-  
-  @media (min-width: 1025px) {
-    /* Estilos para a versão computador */
-    .imagens img {
-      width: 30%;
-      margin: 1%;
-      max-width: none;
-    }
-  }
-
- 
