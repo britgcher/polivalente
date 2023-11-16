@@ -385,7 +385,7 @@ ion-modal {
     --width: fit-content;
     --min-width: 30%;
     --max-width: 70%;
-    --height: fit-content;
+    // --height: fit-content;
     --min-height: 20%;
     --border-radius: 6px;
     --box-shadow: none;
@@ -394,6 +394,17 @@ ion-modal {
 
 .cardzin {
     --background: #D0BCE8;
+}
+
+.bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 200px;
+    height: 300px;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 .imgreceitas {
