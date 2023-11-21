@@ -4,7 +4,7 @@
     border: 0;
     overflow: hidden;
     box-shadow: none;
-    outline: 1px solid red;
+    //outline: 1px solid red;
 }
 
 :root {
@@ -16,116 +16,18 @@
     --font-color: black;
 }
 
-/* HEADER */
-#banner {
+/* Pagina Inteira */
+#paginaprincipal {
     background: #EFE4F6;
     width: auto;
 }
 
-ion-header {
-    background: linear-gradient(90deg, rgba(189,136,253,1) 35%, rgba(239,228,246,1) 100%);
-    width: 100%;
-    height: 10vh;
-}
-
-ion-col{
-    color: #473BA3;
-}
-
-ion-searchbar.custom {
-    --background: #EFE4F6;
-    --color: #473BA3;
-    --placeholder-color: #473BA3;
-    --icon-color: #473BA3;
-    --clear-button-color: #473BA3;
-    --border-radius: 30px;
-    --box-shadow: none;
-}
-
-#logo {
-    flex-direction: row;
-    justify-content: flex-start;
-    float: left;
-    margin: 10px;
-    transition: 0.5s;
-    width: 4vw;
-    height: 7vh;
-}
-
-#logo:hover {
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-}
-
-#titulo {
-    width: auto;
-    height: auto;
-    display: flex;
-    margin: 3%;
-    margin-left: 20%;
-    justify-content: left;
-    align-items: center;
-    color: #473BA3;
-    font-weight: bold;
-    transition: 0.5s;
-}
-
-#titulo:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-#perfil {
-    width: 7vw;
-    height: 7vh;
-    float: right;
-    margin: 3%;
-    color: #473BA3;
-}
-
-#segundoheader {
-    background: #BD88FD;
-    height: 7vh;
-}
-
-ion-button {
-    justify-content: center;
-    --background: #C9ADEB;
-    --border-radius: 120px;
+// Funcoes nativas do Ionic
+h1 {
     color: black;
-    font-weight: bold;
-    box-shadow: none;
-    transition: 0.7s;
-    -moz-transition: all 0.2s;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
-    height: 5vh;
-    width: 50%;
-    font-size: 15px;
+    font-size: 30px;
 }
 
-ion-button:hover {
-    --moz-transform: scale(1.2);
-    --webkit-transition: all 0.2s;
-    transition: all 0.2s;
-    width: 60%;
-    text-align: start;
-    border-radius: 120px;
-    justify-content: space-between;
-}
-
-ion-button img {
-    display: none;
-}
-
-ion-button:hover img {
-    display: flex;
-    width: 37px;
-    height: 37px;
-    margin-left: 12px;
-}
 
 h2 {
     text-align: center;
@@ -143,119 +45,53 @@ h2:hover {
     font-weight: bold;
 }
 
-ion-button:hover+#acucar {
-    width: 100%;
-    height: 100%;
-    display: block;
-    text-align: left;
-    justify-content: left;
+// Prototipo de botao
+ion-button {
+  background: #C9ADEB;
+//     --border-radius: 120px;
+//     color: black;
+//     font-weight: bold;
+//     box-shadow: none;
+//     transition: 0.7s;
+//     -moz-transition: all 0.2s;
+//     -webkit-transition: all 0.2s;
+//     transition: all 0.2s;
+//     height: 5vh;
+//     width: 50%;
+//     font-size: 15px;
 }
 
-#tres-tracinho {
-    display: none;
-}
+// ion-button:hover {
+//     --moz-transform: scale(1.2);
+//     --webkit-transition: all 0.2s;
+//     transition: all 0.2s;
+//     width: 60%;
+//     text-align: start;
+//     border-radius: 120px;
+//     justify-content: space-between;
+// }
 
-/* DIVIDER */
-#divider {
-    background-color: #473BA3;
-    height: 4px;
-    border-radius: 90px;
-    justify-content: center;
-    align-items: center;
-}
+// ion-button img {
+//     display: none;
+// }
 
-#espacamento {
-    margin: 1%;
-    height: 10vh;
-    justify-content: center;
-    align-items: center;
-}
+// ion-button:hover img {
+//     display: flex;
+//     width: 37px;
+//     height: 37px;
+//     margin-left: 12px;
+// }
 
-#destaques {
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    height: auto;
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-}
+// ion-button:hover+#acucar {
+//     width: 100%;
+//     height: 100%;
+//     display: block;
+//     text-align: left;
+//     justify-content: left;
+// }
 
-
-#carddestaques {
-    width: 950px;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    background-color: #C294F8;
-}
-
-ion-icon {
-    width: 60px;
-    height: 150px;
-    vertical-align: middle;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
+ion-col {
     color: #473BA3;
-}
-
-.filtrar{
-    height:67vh;
-}
-
-.filtrarbotao{
-    width:3vw;
-    height:4vh;
-    margin:9px;
-    transition: 0.5s;
-    --moz-transform: scale(1.1);
-    --webkit-transition: all 0.2s;
-}
-
-.filtrarbotao:hover{
-    width: 45%;
-    text-align: start;
-    border-radius: 120px;
-    transition: 0.4s;
-    --moz-transform: scale(1.1);
-    --webkit-transition: all 0.2s;
-}
-
-
-/* LISTA RECEITAS */
-#listareceitas {
-    --width: auto;
-}
-
-#imagem {
-    width: 12vw;
-    height: 9vh;
-    margin: 2%;
-}
-
-/* TIPOS */
-.box {
-    justify-content: center;
-    align-items: center;
-    margin: 5%;
-    width: 90%;
-    height: auto;
-    border-radius: 10%;
-    background: #D0BCE8;
-}
-
-.boxxie {
-    height: auto;
-    margin: 3%;
-    background: #EFE4F6;
-    border-radius: 15px;
-}
-
-h1 {
-    color: black;
-    font-size: 30px;
 }
 
 ion-checkbox {
@@ -283,23 +119,235 @@ ion-checkbox:hover {
     transition: 0.4s;
 }
 
+ion-icon {
+    width: 60px;
+    height: 150px;
+    vertical-align: middle;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #473BA3;
+}
+
+ion-modal {
+    --background:none;
+    --box-shadow: none;
+    
+}
+
+ion-title {
+    color: black;
+    width: 200px;
+}
+
+/*Titulo*/
+#tituloid {
+    margin: 1%;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo {
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#divider {
+    background-color: #473BA3;
+    height: 4px;
+    border-radius: 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Meio do Site*/
+
+// Coluna E D
+.filtrar {
+    height: 67vh;
+}
+
+// Coluna D
+.filtrarbotao {
+    width: 3vw;
+    height: 4vh;
+    margin: 9px;
+    transition: 0.5s;
+    --moz-transform: scale(1.1);
+    --webkit-transition: all 0.2s;
+}
+
+.filtrarbotao:hover {
+    width: 45%;
+    text-align: start;
+    border-radius: 120px;
+    transition: 0.4s;
+    --moz-transform: scale(1.1);
+    --webkit-transition: all 0.2s;
+}
+
+// Coluna M
+#listareceitas {
+    --width: auto;
+}
+
+.imagemprincipal {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 175px;
+    height: 250px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagemprincipal:hover{
+    transform: scale(1.13);
+    border-radius: 10px;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+   
+
+/* Modal Filtrar */
+#caixamodalreceita {
+    margin:5%;
+    padding:15px;
+    scale:0.88;
+    height: auto;
+    border-radius: 20px;
+    background: #D0BCE8;
+}
+
+#caixamodalreceitaopcoes {
+    height: auto;
+    margin: 3%;
+    padding: 10px;
+    background: #EFE4F6;
+    border-radius: 15px;
+}
+
+#titulotipo{
+    color:#473BA3;
+    font-weight: 500;
+}
+
+
+
+// MODAL RECEITA
+
+.cardzin {
+    --background: #D0BCE8;
+}
+
+#carddestaques {
+    width: 950px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #C294F8;
+}
+
+.imgreceitas {
+    width: 20vw;
+    height: 25vh;
+    margin: 20px;
+}
+
+#imagens {
+    width: 100%;
+    height: 100%;
+}
+
+.colcard {
+    height: 90%;
+    float: right;
+}
+
+.nomerec {
+    width: auto;
+    height: auto;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #473BA3;
+}
+
+.restri {
+    height: 100%;
+    margin: 5%;
+}
+
+.iconsrestr {
+    height: 40%;
+    width: 40%;
+    margin: 5%;
+}
+
+
+// Paginacçao
+#paginanumeros {
+    display: flex;
+    margin-top:4%;
+}
+
+#tracoesquerdo,
+#tracodireito{
+    background-color: #473BA3;
+    height: 4px;
+    border-radius: 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+#iconeesquerda,
+#iconedireita {
+    height: 4vh;
+    width: 4vw;
+    color: #473BA3;
+    margin: 2%;
+    margin-top:2%;
+}
+
+
+#numeros {
+    color: black;
+    font-weight: bold;
+    margin-top:2%;
+    background-color:#C294F8;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 0.85; //parei aqui
+  
+}
+
 /* FOOTER */
-#subbanner {
+#footer {
     background-color: #C294F8;
     background: #C294F8;
     color: #C294F8;
-    height: 15vh;
+    height: 20vh;
     width: auto;
     margin-top: 2%;
 }
 
 #colunasfooter {
     height: auto;
-}
-
-ion-title {
-    color: black;
-    width: 200px;
 }
 
 #logofooter {
@@ -352,98 +400,3 @@ ion-title {
     transform: scale(1.2);
 }
 
-#pag {
-    display: flex;
-}
-
-#esquerda {
-    height: 4vh;
-    width: 4vw;
-    color: #473BA3;
-    margin: 2%;
-}
-
-#direita {
-    height: 4vh;
-    width: 4vw;
-    color: #473BA3;
-    margin: 2%;
-}
-
-#paginacao {
-    height: auto;
-    width: auto;
-    margin: 2%;
-    color: black;
-    font-weight: bold;
-}
-
-
-
-/* card receitas */
-ion-modal {
-    --width: fit-content;
-    --min-width: 30%;
-    --max-width: 70%;
-    // --height: fit-content;
-    --min-height: 20%;
-    --border-radius: 6px;
-    --box-shadow: none;
-    --background: #D0BCE8;
-}
-
-.cardzin {
-    --background: #D0BCE8;
-}
-
-.bg {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 200px;
-    height: 300px;
-    margin: 20px;
-    padding: 5px;
-    border-radius: 10px;
-}
-
-.imgreceitas {
-    width: 20vw;
-    height: 25vh;
-    margin: 20px;
-}
-
-#imagens{
-    width: 100%;
-    height: 100%;
-  }
-
-
-
-
-
-  .colcard {
-    height: 90%;
-    float: right;
-}
-
-.nomerec {
-    width: auto;
-    height: auto;
-    font-size: 30px;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    color: #473BA3;
-}
-
-.restri {
-    height: 100%;
-    margin: 5%;
-}
-
-.iconsrestr {
-    height: 40%;
-    width: 40%;
-    margin: 5%;
-}
