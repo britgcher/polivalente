@@ -22,8 +22,9 @@
           <ion-row>
             <!-- Coluna da esquerda -->
             <ion-col size="2" size-lg="1">
-              <ion-row class="filtrar">
+              <ion-row>
                 <ion-col>
+                  anuncio cis
                 </ion-col>
               </ion-row>
             </ion-col>
@@ -43,7 +44,7 @@
             <ion-col size="2" size-lg="1">
               <ion-row class="filtrar">
                 <ion-col>
-                  <ion-button id="open-modal" class="filtrarbotao"></ion-button>
+                  <ion-button id="open-modal"  size="large" shape="round" class="filtrarbotao"><ion-icon class="iconebotao" name="filter-circle-outline"></ion-icon></ion-button>
                 </ion-col>
               </ion-row>
             </ion-col>
@@ -54,39 +55,39 @@
 
       <!-- NUMEROS PAGINA -->
       <ion-row class="align-items-center ion-text-center ion-justify-content-center" id="rownumerospagina">
-        <ion-col size-lg="10" size="12"  class="align-items-center ion-text-center ion-justify-content-center" id="paginanumeros">
+        <ion-col size-lg="8" size-md="10" size="12"  class="align-items-center ion-text-center ion-justify-content-center" id="paginanumeros">
 
-          <ion-col size-lg="3" size="1"id="tracoesquerdo"></ion-col>
+          <ion-col size-lg="3" size-md="2" size="0" id="tracoesquerdo"></ion-col>
           
-          <ion-col size-lg="1" size="2">
+          <ion-col id="colunaiconeesquerda" size-md="1" size="2">
             <ion-icon name="chevron-back-outline" id="iconeesquerda"></ion-icon>
           </ion-col>
 
-          <ion-col size-lg="2" size="6">
+          <ion-col size-lg="4" size-md="5" size="8">
             <ion-row>
-              <ion-col>
+              <ion-col id="colunanumeros">
                 <h5 id="numeros">1</h5>
-              </ion-col>
-              <ion-col>
+              </ion-col >
+              <ion-col id="colunanumeros">
                 <h5 id="numeros">2</h5>
               </ion-col>
-              <ion-col>
+              <ion-col id="colunanumeros">
                 <h5 id="numeros">3</h5>
               </ion-col>
-              <ion-col>
+              <ion-col id="colunanumeros">
                 <h5 id="numeros">4</h5>
               </ion-col>
-              <ion-col>
+              <ion-col id="colunanumeros">
                 <h5 id="numeros">5</h5>
               </ion-col>
             </ion-row>
           </ion-col>
         
-          <ion-col size-lg="1" size="2">
+          <ion-col id="colunaiconedireita" size-md="1" size="2">
             <ion-icon name="chevron-forward-outline" id="iconedireita"></ion-icon>
           </ion-col>
           
-          <ion-col size-lg="3" size="1" id="tracodireito"></ion-col>
+          <ion-col size-lg="3" size-md="2" size="0" id="tracodireito"></ion-col>
 
         </ion-col>
       </ion-row>
