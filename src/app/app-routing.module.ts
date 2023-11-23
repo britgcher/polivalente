@@ -30,7 +30,11 @@ const routes: Routes = [
   {
     path: 'semacucar',
     loadChildren: () => import('./semacucar/semacucar.module').then( m => m.SemacucarPageModule)
+  },  {
+    path: 'receita',
+    loadChildren: () => import('./receita/receita.module').then( m => m.ReceitaPageModule)
   },
+
   
    
 

@@ -1,59 +1,70 @@
 <ion-header collapse="fade">
 
   <!-- HEADER -->
-   <ion-row class="ion-align-items-center">
-     <ion-col>
-       <img srcset="../../assets/polivalente.png" width="70px" height="70px" id="logo" routerLink="/home">
-       <h1 id="titulo">Polivalente</h1>
-       </ion-col>
-    
-       <ion-col>
-       <ion-searchbar show-cancel-button="never" animated="true" placeholder="Pesquisar..." class="custom"
-       ></ion-searchbar>
-     </ion-col>
- 
-     <ion-col>
-       <a>
-       <ion-icon name="person-circle-outline" id="perfil" routerLink="/login"></ion-icon>
-     </a>
-     </ion-col>
-   </ion-row>
-   
- </ion-header>
-         
+  <ion-row size="12" class="ion-align-items-center ion-justify-content-center">
 
- 
-   <!-- OPÇOES -->
- 
- <ion-row size="12" class="ion-align-items-center ion-justify-content-center" id="segundoheader">
- <ion-content id="tres-tracinho">
-   <ion-buttons slot="start">
-     <ion-menu-button auto-hide="false" menu="main-menu"></ion-menu-button>
-   </ion-buttons>
-   <ion-title>Menu Button</ion-title>
- </ion-content>
- 
+    <ion-col size="2" size-lg="1">
+      <img srcset="../../assets/polivalente.png" width="70px" height="70px" id="logo" routerLink="/home">
+    </ion-col>
+
+    <ion-col  size="0" size-lg="2">
+      <h1 id="titulo">Polivalente</h1>
+    </ion-col>
+
+    <ion-col  size="0" size-lg="1">
+    </ion-col>
+
+    <ion-col id="barrapesquisa" size="8" size-lg="4" class="ion-text-start">
+      <ion-searchbar show-cancel-button="never" animated="true" placeholder="Pesquisar..."
+        class="custom"></ion-searchbar>
+    </ion-col>
+
+    <ion-col size="0" size-lg="3">
+    </ion-col>
+
+
+    <ion-col size="2" size-lg="1">
+      <a>
+        <ion-icon name="person-circle-outline" id="perfil" routerLink="/login"></ion-icon>
+      </a>
+    </ion-col>
+  </ion-row>
+
+</ion-header>
+
+
+
+<!-- OPÇOES -->
+
+<ion-row size="12" class="ion-align-items-center ion-justify-content-center" id="segundoheader">
+  <ion-content id="tres-tracinho">
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false" menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Menu Button</ion-title>
+  </ion-content>
+
   <ion-col id="botoesopcoes" size="12" size-md="6" size-lg="3">
     <ion-button routerLink="/semgluten">
       <h2>Sem Gluten</h2>
       <img src="../assets/gluten.png" id="imagemopcoes">
     </ion-button>
   </ion-col>
-  
+
   <ion-col id="botoesopcoes" size="12" size-md="6" size-lg="3">
     <ion-button routerLink="/semlactose">
       <h2>Sem Lactose</h2>
       <img src="../assets/lactose.png" id="imagemopcoes">
     </ion-button>
   </ion-col>
-  
+
   <ion-col id="botoesopcoes" size="12" size-md="6" size-lg="3">
     <ion-button routerLink="/semacucar">
       <h2>Sem Açúcar</h2>
       <img src="../assets/açucar.png" id="imagemopcoes">
     </ion-button>
   </ion-col>
-  
+
   <ion-col id="botoesopcoes" size="12" size-md="6" size-lg="3">
     <ion-button routerLink="/lowcarb">
       <h2>Low Carb</h2>
@@ -61,8 +72,4 @@
     </ion-button>
   </ion-col>
 
- </ion-row>
- 
-
-        
-         
+</ion-row>

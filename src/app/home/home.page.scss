@@ -176,26 +176,25 @@ ion-title {
 }
 
 // Coluna D
-.filtrarbotao {
-    max-height: 70px;
-    max-width: auto;
-    margin: 4px;
-    padding: 4px;
-    --background: rgba(156, 80, 80, 0.386);
-    --box-shadow: none;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
+.iconebotao {
+    height: 6vh;
 }
 
-.filtrarbotao:hover {
+.iconebotao:hover {
     transform: scale(1.1);
 }
 
-.iconebotao {
-    padding: 10px;
+@media (max-width:280px) {
+
+    .iconebotao {
+        width: 80%;
+    }
+
+    .iconebotao:hover {
+        transform: scale(1.1);
+    }
 }
+
 
 /* Estilos responsivos */
 
@@ -378,6 +377,18 @@ ion-title {
     justify-content: center;
     scale: 0.99; //parei aqui
 
+}
+
+@media (max-width:320px) {
+
+    #numeros {
+        scale: 0.8;
+    }
+
+    #iconeesquerda,
+    #iconedireita {
+       scale:0.8;
+    }
 }
 
 /* FOOTER */

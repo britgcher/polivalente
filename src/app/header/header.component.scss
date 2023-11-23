@@ -47,9 +47,7 @@
   }
   
   #logo{
-    flex-direction: row;
-    justify-content: flex-start;
-    float: left;
+    justify-content: center;
     margin: 10px;
     transition: 0.5s;
     width:4vw;
@@ -61,6 +59,10 @@
     -moz-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   
   #titulo{
@@ -68,7 +70,6 @@
     height: auto;
     display: flex;
     margin: 3%;
-    margin-left:20%;
     justify-content:left;
     align-items: center;
     color:#473BA3;
@@ -80,6 +81,7 @@
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+    padding-left: 15px;
   }
   
   #perfil{
@@ -90,6 +92,40 @@
     color:#473BA3;
   
   }
+
+
+  @media (max-width:900px) {
+    #logo{
+      width:100%;
+      height:80%; 
+      padding-right:8px;
+      transition: 0.5s;
+    }
+
+    #logo:hover {
+      width:100%;
+      height:80%;
+      -moz-transform:none;
+      -webkit-transform: none;
+      transform: ease-in-out 0.2s;
+      display: flex;
+      justify-content: none;
+      align-items: none;
+      text-align: none;
+    }
+
+    #perfil{
+      width:6vh;
+      height:6vh;
+      color:#473BA3;
+      margin-right: 7px;
+    }
+    
+  #barrapesquisa{
+    scale:0.8;
+  }
+  }
+
   
   #segundoheader{
     background: #BD88FD;
