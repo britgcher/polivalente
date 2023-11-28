@@ -17,17 +17,15 @@
 
 
       <!--IMAGEM RECEITA-->
-
-      <ion-row class="align-items-center" id="espacoimagem">
-        <ion-col size="3"></ion-col>
-        <ion-col size="6">
-          <img
-            src="https://images.pexels.com/photos/18013806/pexels-photo-18013806/free-photo-of-fotografia-aerea-aerofotografia-fotografia-animal-fotografia-de-animais.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            id="fotorec">
-        </ion-col>
-        <ion-col size="3"></ion-col>
-      </ion-row>
-
+      <ion-col size="8" size-lg="10" class="ion-align-items-center ion-justify-content-center">
+              <ion-row>
+                <ion-col size="12" size-md="6" size-lg="4" *ngFor="let receita of this.receita">
+                  <div class="imagemprincipal"
+                    [ngStyle]="{'background-image' : receita.src ? 'url(' + receita.src +')' : 'url('+ img_not_found +')'}">
+                  </div>
+                </ion-col>
+              </ion-row>
+            </ion-col>
 
       <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 

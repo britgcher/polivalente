@@ -22,7 +22,6 @@
   
   //HEADER
   
-  
   #banner{
     background: #EFE4F6;
     width: auto;
@@ -32,10 +31,9 @@
     background: rgb(189,136,253);
     background: linear-gradient(90deg, rgba(189,136,253,1) 35%, rgba(239,228,246,1) 100%);
     width:100%;
-    height: 10vh;
+    height: auto;
   }
-  
-  
+
   ion-searchbar.custom{
     --background: #EFE4F6;
     --color: #473BA3;
@@ -47,22 +45,17 @@
   }
   
   #logo{
-    justify-content: center;
-    margin: 10px;
+    margin: 5px;
     transition: 0.5s;
-    width:4vw;
-    height:7vh;
-    
+    width:5vw;
+    height:10vh;
+    display: inline-block;
   }
-  
+
   #logo:hover {
     -moz-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
   }
   
   #titulo{
@@ -87,45 +80,36 @@
   #perfil{
     width:7vw;
     height:7vh;
-    float:right;
     margin: 3%;
     color:#473BA3;
   
   }
 
-
   @media (max-width:900px) {
     #logo{
-      width:100%;
-      height:80%; 
-      padding-right:8px;
+      width:85%;
+      height:85%; 
       transition: 0.5s;
+      display: inline-block;
     }
 
     #logo:hover {
-      width:100%;
-      height:80%;
-      -moz-transform:none;
-      -webkit-transform: none;
-      transform: ease-in-out 0.2s;
-      display: flex;
-      justify-content: none;
-      align-items: none;
-      text-align: none;
+      -moz-transform: scale(1);
+      -webkit-transform: scale(1);
+      transform: scale(1);
     }
 
     #perfil{
-      width:6vh;
-      height:6vh;
       color:#473BA3;
-      margin-right: 7px;
+      zoom:1.5;
     }
+
     
   #barrapesquisa{
-    scale:0.8;
+    scale:0.9;
   }
+  
   }
-
   
   #segundoheader{
     background: #BD88FD;
@@ -135,9 +119,11 @@
 
   #botoesopcoes{
     padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
-
-  
 
   ion-button{
     justify-content: center;
@@ -267,68 +253,8 @@
     }
   }
 
-  
-  
   #tres-tracinho{
     display:none;
   }
   
-  
-  
-                    // DIVISOR
-  
-                    #divider{
-                      background-color: #473BA3;
-                      height: 4px;
-                      border-radius: 90px;
-                      justify-content: center;
-                      align-items: center;
-                    }
-                    #espacamento{
-                      margin: 1%;
-                      height: 10vh;
-                      width: 100%;
-                      justify-content: center;
-                      align-items: center;
-                    }
-                    #destaques{
-                      align-items: center;
-                      justify-content: center;
-                      width:auto;
-                      height: auto;
-                      color: black;
-                      font-weight: bold;
-                      font-size: 20px;
-                    }
-  
-                    #imagem1{
-                      margin:10px;
-                      padding:10px;
-                    }
-                    #imagem2{
-                      margin:10px;
-                      padding:10px;
-                    }
-                    #imagem3{
-                      margin:10px;
-                      padding:10px;
-                    }
-                    #carddestaques{
-                      width: 950px;
-                      justify-content: center;
-                      align-items: center;
-                      margin: 0 auto;
-                      background-color: #C294F8;
-                    }
-  
-    ion-icon{
-      width: 60px;
-      height: 150px;
-      vertical-align: middle;
-      margin-left: 0;
-      margin-right: 0;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      color:#473BA3;
-    }
   
