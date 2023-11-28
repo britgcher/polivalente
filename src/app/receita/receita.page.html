@@ -8,7 +8,7 @@
       <ion-row id="espacamento">
         <ion-col size="1"></ion-col>
         <ion-col size="3" id="divider"></ion-col>
-        <ion-col size="4" class="ion-text-center" id="nomerec">Nome receita</ion-col>
+        <ion-col size="4" class="ion-text-center" id="nomerec"> {{ this.receita.nome }}</ion-col>
         <ion-col size="3" id="divider"></ion-col>
         <ion-col size="1"></ion-col>
       </ion-row>
@@ -19,14 +19,14 @@
       <!--IMAGEM RECEITA-->
       <ion-col size="8" size-lg="10" class="ion-align-items-center ion-justify-content-center">
               <ion-row>
-                <ion-col size="12" size-md="6" size-lg="4" *ngFor="let receita of this.receita">
-                  <div class="imagemprincipal"
-                    [ngStyle]="{'background-image' : receita.src ? 'url(' + receita.src +')' : 'url('+ img_not_found +')'}">
+                <ion-col size="12" size-md="6" size-lg="4">
+                  <div class="imagemprincipal">
+                    {{this.receita.nome}}
                   </div>
                 </ion-col>
               </ion-row>
             </ion-col>
-
+            
       <!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
       <!-- DIVIDER -->
@@ -47,13 +47,9 @@
         <ion-col size="6">
           <ion-item id="ingredientebox" lines="none">
             <ion-list lines="none">
-              <h4>asso1</h4>
-              <h4>asso1</h4>
-              <h4>asso1</h4>
-              <h4>asso1</h4>
-              <h4>asso1</h4>
-              <h4>asso1</h4>
-              <h4>asso1</h4>
+              <h4>{{this.receita.ingredientes[4]}}</h4>
+              <h4>{{this.receita.ingredientes[5]}}</h4>
+              <h4>{{this.receita.ingredientes[6]}}</h4>
             </ion-list>
           </ion-item>
         </ion-col>
@@ -77,14 +73,7 @@
         <ion-col class="ion-text-center"size="6">
           <ion-item id="ingredientebox" lines="none">
             <ion-list lines="none">
-              <h4>asso1</h4>
-              <h4>asso1</h4>
-              <h4>asso1</h4>
-              <h4>asso1</h4>
-              <h4>asso1</h4>
-              <h4>asso1</h4>
-              <h4>asso1</h4>
-              <h1>dfsfdsfs</h1>
+              <h4>{{this.receita.mododefazer}}</h4>
             </ion-list>
           </ion-item>
         </ion-col>

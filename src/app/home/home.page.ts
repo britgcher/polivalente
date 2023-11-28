@@ -43,16 +43,37 @@ export class HomePage {
     {src:'https://images.pexels.com/photos/1425174/pexels-photo-1425174.jpeg?auto=compress&cs=tinysrgb&w=1600', id:'5', nomerec:'exemplo', descricao:'  Ônibus 02 umas 12:55 Eu que agradeço Amém 🙏', restricoes: ['../assets/gluten.png','../assets/lactose.png', '../assets/açucar.png', '../assets/carboidrato.png']},
     {src:'https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1600', id:'5', nomerec:'exemplo', descricao:'  Ônibus 02 umas 12:55 Eu que agradeço Amém 🙏', restricoes: ['../assets/gluten.png','../assets/lactose.png', '../assets/açucar.png', '../assets/carboidrato.png']},
   ]
+
+  receita =
+  { 
+    descricao: null,
+    entrada: null,
+    ingredientes: [],
+    lowCarb: null,
+    mododefazer: [],
+    nome: null,
+    petisco: null,
+    pratoP: null,
+    semAcucar: null
+  }
+
   constructor() {} 
 
   setOpen(isOpen: boolean, receita: any | null) {
     this.isModalOpen = isOpen;
     this.receita_selecionada = receita;
+    localStorage.setItem('receita', JSON.stringify(receita))
   }
 
   onWillDismiss(event: Event) {
     this.isModalOpen = false;
   }
+
+  ngOnInit() {
+  
+  }
+
+  
 
 //   isLoading: boolean = false;
 
