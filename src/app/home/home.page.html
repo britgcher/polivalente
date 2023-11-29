@@ -173,8 +173,20 @@
       [ngStyle]="{'background-image' : receita_selecionada.src ? 'url(' + receita_selecionada.src +')' : 'url('+ img_not_found +')'}">
     </div>
       <ion-col size="7">
-        <h5 class="nomerec">{{ this.receita.nome }}</h5>
+        <h1>{{this.receita_selecionada.nome}}</h1>
         <h4>{{this.receita_selecionada.descricao}}</h4>
+        <ng-container *ngIf="receita_selecionada.semAcucar === true">
+          <img src="../../assets/açucar.png">
+        </ng-container>
+        <ng-container *ngIf="receita_selecionada.semGluten === true">
+          <img src="../../assets/gluten.png">
+        </ng-container>
+        <ng-container *ngIf="receita_selecionada.semLactose === true">
+          <img src="../../assets/lactose.png">
+        </ng-container>
+        <ng-container *ngIf="receita_selecionada.lowCarb === true">
+          <img src="../../assets/carboidrato.png">
+        </ng-container>
       </ion-col>
       <ion-col size="2" class="colcard">
         <div class="restri">
