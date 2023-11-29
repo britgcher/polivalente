@@ -25,7 +25,8 @@ export class ReceitaPage {
       nome: null,
       petisco: null,
       pratoP: null,
-      semAcucar: null
+      semAcucar: null,
+      src: null
     }
 
 
@@ -37,13 +38,13 @@ export class ReceitaPage {
   ) { }
 
   ngOnInit() {
-    
-    if (localStorage.getItem('receita')) {
       const dados: any = localStorage.getItem('receita')
-      this.receita_selecionada = JSON.parse(dados);
-      console.log(this.receita_selecionada)
-      this.getReceita();
-    }
+      if (dados !== null) {
+        this.receita_selecionada = JSON.parse(dados);
+        console.log(this.receita_selecionada)
+        this.getReceita();
+      }
+
   }
   listarReceitas() {
     this._crudService.fetchAll('receita')
@@ -53,9 +54,10 @@ export class ReceitaPage {
   }
 
   getReceita(){
-    this._crudService.fetchByLike('nome', 'Broa de fubá', 'receita')
+    this._crudService.fetchByLike('nome', this.receita_selecionada.nome, 'receita')
     .then(receita => {
       this.receita = receita[0];
+      console.log(this.receita)
     })
   }
 }

@@ -23,9 +23,19 @@
               //HEADER
   
   
+  .aa{
+    margin: 10px;
+  }
+
+
   #banner{
     background: #EFE4F6;
     width: auto;
+  }
+
+  .bolinha{
+    border-radius: 50%;
+    color: #473BA3;
   }
   
   ion-header{
@@ -155,6 +165,7 @@
     justify-content: left;
   }
   
+
 
   .imagemprincipal {
     background-size: cover;
