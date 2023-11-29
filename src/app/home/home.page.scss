@@ -90,9 +90,7 @@ h2:hover {
 //     justify-content: left;
 // }
 
-ion-col {
-    color: #473BA3;
-}
+
 
 ion-checkbox {
     --size: 25px;
@@ -133,7 +131,6 @@ ion-icon {
 ion-modal {
     --background: none;
     --box-shadow: none;
-
 }
 
 ion-title {
@@ -260,63 +257,96 @@ ion-title {
     border-radius: 15px;
 }
 
-#titulotipo {
+#colunaesquerdamodalreceita{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#nomereceitamodal {
     color: #473BA3;
-    font-weight: 500;
+    font-weight: bold;
+    height: 60px;
+    scale:0.95;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+#descricaoreceitamodal{
+    color: #473BA3;
+    font-weight: 200 bold;
+    font-size: 20px;
+    display: flex;
+    height: 140px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
 }
 
 
 
 // MODAL RECEITA
 
-.cardzin {
-    --background: #D0BCE8;
+.variacoes{
+    width: 80px;
+    height: 80px;
 }
 
-#carddestaques {
-    width: 950px;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    background-color: #C294F8;
+.imagemodalabrirreceitas {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 180px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: transform 0.3s ease-in-out;
 }
 
-.imgreceitas {
-    width: 20vw;
-    height: 25vh;
-    margin: 20px;
+#modalreceita{
+  --width: 65%; 
+  --height: 85%;
 }
 
-#imagens {
+#modalreceitaestrutura{
+    background:#C294F8; 
     width: 100%;
     height: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-.colcard {
-    height: 90%;
-    float: right;
+.fundomodal{
+    --background:#C294F8;
 }
 
-.nomerec {
-    width: auto;
-    height: auto;
-    font-size: 30px;
-    align-items: center;
-    justify-content: center;
+.nomereceitamodal{
+    color: #473BA3;
     font-weight: bold;
+}
+
+  
+.descricaoreceitamodal{
     color: #473BA3;
 }
 
-.restri {
-    height: 100%;
-    margin: 5%;
+#colunadireitamodalreceita{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.iconsrestr {
-    height: 40%;
-    width: 40%;
-    margin: 5%;
-}
+.variacao-cinza {
+    filter: grayscale(100%);
+  }
+  
 
 
 // Paginacçao
