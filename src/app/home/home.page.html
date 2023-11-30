@@ -165,59 +165,68 @@
 </ion-modal>
 
 <!-- modal abrir receitas -->
-<ion-modal id="modalreceita"  [isOpen]="isModalOpen" (willDismiss)="onWillDismiss($event)">
+<ion-modal id="modalreceita" [isOpen]="isModalOpen" (willDismiss)="onWillDismiss($event)">
   <ng-template>
-      <ion-item class="fundomodal" button="true" detail="false" (click)="setOpen(false, receita_selecionada)" lines="none"
-        routerLink="/receita">
+    <ion-item class="fundomodal" button="true" detail="false" (click)="setOpen(false, receita_selecionada)"
+      lines="none">
 
-        <ion-col id="modalreceitaestrutura" size="12">
-          <ion-row>
-            <ion-col size="3">
-              <div class="imagemodalabrirreceitas"
-                [ngStyle]="{'background-image': receita_selecionada.src ? 'url(' + receita_selecionada.src + ')' : 'url(' + img_not_found + ')'}">
-              </div>
-            </ion-col>
 
-            <ion-col size="6" id="colunaesquerdamodalreceita">
-              <ng-container *ngIf="receita_selecionada.nome || receita_selecionada.descricao">
+      <ion-col id="modalreceitaestrutura" size="12">
+        <ion-row>
+          <ion-col class="colunaimagem" size="12" size-lg="3">
+            <div class="imagemodalabrirreceitas"
+              [ngStyle]="{'background-image': receita_selecionada.src ? 'url(' + receita_selecionada.src + ')' : 'url(' + img_not_found + ')'}">
+            </div>
+          </ion-col>
 
-                <ion-col>
+          <ion-col size="12" size-lg="6" id="colunaesquerdamodalreceita">
+            <ng-container *ngIf="receita_selecionada.nome || receita_selecionada.descricao">
+
+              <ion-row>
+                <ion-col size="12">
                   <h1 id="nomereceitamodal" *ngIf="receita_selecionada.nome">{{ receita_selecionada.nome }}</h1>
                 </ion-col>
-                <ion-col>
-                  <h4 id="descricaoreceitamodal" *ngIf="receita_selecionada.descricao">{{receita_selecionada.descricao}}
-                  </h4>
+                <ion-col size="12">
+                  <p id="descricaoreceitamodal" *ngIf="receita_selecionada.descricao">{{receita_selecionada.descricao}}
+                  </p>
                 </ion-col>
+              </ion-row>
 
-              </ng-container>
-              <ng-container *ngIf="!receita_selecionada.nome && !receita_selecionada.descricao">
-                <p>Sem informações sobre a receita</p>
-              </ng-container>
-            </ion-col>
+            </ng-container>
+            <ng-container *ngIf="!receita_selecionada.nome && !receita_selecionada.descricao">
+              <p>Sem informações sobre a receita</p>
+            </ng-container>
+          </ion-col>
 
-            <ion-col size="3" class="ion-align-items-center ion-justify-content-center ion-text-center"
-              id="colunadireitamodalreceita">
-              <div id="variacoesreceitas">
-                <ion-row>
-                  <ion-col size="6" [ngClass]="{'variacao-cinza': !receita_selecionada.semAcucar}">
-                    <img class="variacoes" src="../../assets/açucar.png">
-                  </ion-col>
-                  <ion-col size="6" [ngClass]="{'variacao-cinza': !receita_selecionada.semGluten}">
-                    <img class="variacoes" src="../../assets/gluten.png">
-                  </ion-col>
-                  <ion-col size="6" [ngClass]="{'variacao-cinza': !receita_selecionada.semLactose}">
-                    <img class="variacoes" src="../../assets/lactose.png">
-                  </ion-col>
-                  <ion-col size="6" [ngClass]="{'variacao-cinza': !receita_selecionada.lowCarb}">
-                    <img class="variacoes" src="../../assets/carboidrato.png">
-                  </ion-col>
-                </ion-row>
-               </div> 
-            </ion-col>
-          </ion-row>
-        </ion-col>
-      </ion-item>
-    </ng-template>
+          <ion-col size-lg="3" size="12" class="ion-align-items-center ion-justify-content-center ion-text-center"
+            id="colunadireitamodalreceita">
+            <div id="variacoesreceitas">
+              <ion-row>
+                <ion-col size-lg="6" size="3" [ngClass]="{'variacao-cinza': !receita_selecionada.semAcucar}">
+                  <img class="variacoes" src="../../assets/açucar.png">
+                </ion-col>
+                <ion-col size-lg="6" size="3" [ngClass]="{'variacao-cinza': !receita_selecionada.semGluten}">
+                  <img class="variacoes" src="../../assets/gluten.png">
+                </ion-col>
+                <ion-col size-lg="6" size="3" [ngClass]="{'variacao-cinza': !receita_selecionada.semLactose}">
+                  <img class="variacoes" src="../../assets/lactose.png">
+                </ion-col>
+                <ion-col size-lg="6" size="3" [ngClass]="{'variacao-cinza': !receita_selecionada.lowCarb}">
+                  <img class="variacoes" src="../../assets/carboidrato.png">
+                </ion-col>
+              </ion-row>
+              <ion-col size="12">
+                <ion-icon id="setinha" routerLink="/receita" name="arrow-forward-outline"></ion-icon>
+              </ion-col>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-col> 
+      
+      
+
+    </ion-item>
+  </ng-template>
 </ion-modal>
 
 

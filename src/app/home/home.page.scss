@@ -4,7 +4,7 @@
     border: 0;
     overflow: hidden;
     box-shadow: none;
-    outline: 1px solid red;
+    // outline: 1px solid red;
 }
 
 :root {
@@ -21,76 +21,6 @@
     background: #EFE4F6;
     width: auto;
 }
-
-// Funcoes nativas do Ionic
-h1 {
-    color: black;
-    font-size: 30px;
-}
-
-
-h2 {
-    text-align: center;
-    height: auto;
-    justify-content: center;
-    color: black;
-    font-weight: bold;
-    font-size: 100%;
-}
-
-h2:hover {
-    text-align: start;
-    justify-content: left;
-    color: black;
-    font-weight: bold;
-}
-
-// Prototipo de botao
-// ion-button {
-//   background: #C9ADEB;
-//     --border-radius: 120px;
-//     color: black;
-//     font-weight: bold;
-//     box-shadow: none;
-//     transition: 0.7s;
-//     -moz-transition: all 0.2s;
-//     -webkit-transition: all 0.2s;
-//     transition: all 0.2s;
-//     height: 5vh;
-//     width: 50%;
-//     font-size: 15px;
-// }
-
-// ion-button:hover {
-//     --moz-transform: scale(1.2);
-//     --webkit-transition: all 0.2s;
-//     transition: all 0.2s;
-//     width: 60%;
-//     text-align: start;
-//     border-radius: 120px;
-//     justify-content: space-between;
-// }
-
-// ion-button img {
-//     display: none;
-// }
-
-// ion-button:hover img {
-//     display: flex;
-//     width: 37px;
-//     height: 37px;
-//     margin-left: 12px;
-// }
-
-// ion-button:hover+#acucar {
-//     width: 100%;
-//     height: 100%;
-//     display: block;
-//     text-align: left;
-//     justify-content: left;
-// }
-
-
 
 ion-checkbox {
     --size: 25px;
@@ -151,7 +81,7 @@ ion-title {
     justify-content: center;
     width: auto;
     height: auto;
-    color: black;
+    color: rgb(33, 14, 44);
     font-weight: bold;
     font-size: 20px;
 }
@@ -181,38 +111,20 @@ ion-title {
     transform: scale(1.1);
 }
 
-@media (max-width:280px) {
-
-    .iconebotao {
-        width: 80%;
-    }
-
-    .iconebotao:hover {
-        transform: scale(1.1);
-    }
-}
-
-
 /* Estilos responsivos */
 
-// @media (min-width: 150px) and (max-width: 786px) {
-//     .filtrarbotao {
-//         height: 50px;
-//         width: 60px;
-//         scale: 0.75;
-//         margin-left: -4px;
-//     }
+@media (min-width: 150px) and (max-width: 786px) {
 
-//     .filtrarbotao:hover {
-//         transform: scale(1.1);
-//     }
+    .filtrarbotao:hover {
+        transform: scale(1.1);
+    }
 
-//     /* Ajuste do tamanho do ícone para telas de tamanho médio */
-//     .iconebotao {
-//         font-size: 1em;
-//     }
-// }
-
+    /* Ajuste do tamanho do ícone para telas de tamanho médio */
+    .iconebotao {
+        height: 5.5vh;
+        margin-left: -4px;
+    }
+}
 
 // Coluna M
 #listareceitas {
@@ -257,17 +169,12 @@ ion-title {
     border-radius: 15px;
 }
 
-#colunaesquerdamodalreceita{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
 
 #nomereceitamodal {
     color: #473BA3;
     font-weight: bold;
     height: 60px;
-    scale:0.95;
+    scale: 0.95;
     font-size: 30px;
     display: flex;
     justify-content: center;
@@ -276,7 +183,7 @@ ion-title {
     padding: 10px;
 }
 
-#descricaoreceitamodal{
+#descricaoreceitamodal {
     color: #473BA3;
     font-weight: 200 bold;
     font-size: 20px;
@@ -292,9 +199,20 @@ ion-title {
 
 // MODAL RECEITA
 
-.variacoes{
-    width: 80px;
-    height: 80px;
+#modalreceita {
+    --width: 65%;
+    --height: 85%;
+}
+
+.fundomodal {
+    --background: #C294F8;
+}
+
+#modalreceitaestrutura {
+    background: #C294F8;
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .imagemodalabrirreceitas {
@@ -307,46 +225,98 @@ ion-title {
     padding: 15px;
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    transition: transform 0.3s ease-in-out;
 }
 
-#modalreceita{
-  --width: 65%; 
-  --height: 85%;
+#colunaesquerdamodalreceita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#modalreceitaestrutura{
-    background:#C294F8; 
-    width: 100%;
-    height: 100%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
-
-.fundomodal{
-    --background:#C294F8;
-}
-
-.nomereceitamodal{
+#nomereceitamodal {
     color: #473BA3;
     font-weight: bold;
+    font-size: 26px;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgba(148, 76, 232, 0.141);
+    border-radius: 10px;
 }
 
-  
-.descricaoreceitamodal{
-    color: #473BA3;
+#descricaoreceitamodal {
+    color: #332a84;
+    font-size: 20px;
+    padding: 5px;
+    background-color: rgba(147, 89, 214, 0.132);
+    border-radius: 10px;
 }
 
-#colunadireitamodalreceita{
+#colunadireitamodalreceita {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
+.variacoes {
+    width: 100px;
+    height: 100px;
+}
+
 .variacao-cinza {
     filter: grayscale(100%);
-  }
-  
+}
+
+#setinha{
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+    scale: 0.99; //parei aqui
+    background-color: #8c56c9;
+    color: #C294F8;
+}
+
+// responsivar
+
+@media(max-width: 820px){ 
+    
+    .imagemodalabrirreceitas {
+        width: 90%;
+    }
+
+    .colunaimagemresponsiva{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    #modalreceita {
+        --width: 80%;
+        --height: 95%;
+    }
+
+    #nomereceitamodal {
+        font-size: 25px;
+        margin: 10px;
+        padding: 10px;
+    }
+    
+    #descricaoreceitamodal {
+        padding: 10px;
+        font-size: 20px;
+        height: 100%;
+    }
+    
+    .variacoes {
+       width: 85px;
+       height: 70px;
+        max-width: 70px;
+        max-height: 70px;
+        margin-bottom: 8px;
+    }
+
+}
 
 
 // Paginacçao
@@ -417,7 +387,7 @@ ion-title {
 
     #iconeesquerda,
     #iconedireita {
-       scale:0.8;
+        scale: 0.8;
     }
 }
 
