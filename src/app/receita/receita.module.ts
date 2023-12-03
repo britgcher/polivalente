@@ -6,6 +6,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { ReceitaPageRoutingModule } from './receita-routing.module';
 import { HeaderModule } from '../header/header.module';
+import { AuthModule } from '@angular/fire/auth';
 
 import { ReceitaPage } from './receita.page';
 
@@ -15,7 +16,8 @@ import { ReceitaPage } from './receita.page';
     FormsModule,
     IonicModule,
     ReceitaPageRoutingModule,
-    HeaderModule
+    HeaderModule,
+    AuthModule
   ],
   declarations: [ReceitaPage]
 })

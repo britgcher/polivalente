@@ -1,21 +1,23 @@
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
-import { FormsModule } from '@angular/forms';
-import { HomePage } from './home.page';
-
-import { HomePageRoutingModule } from './home-routing.module';
-import { HeaderModule } from '../header/header.module';
+import { HeaderComponent } from '../header/header.component';
+import { AuthModule } from '@angular/fire/auth';
 
 
 @NgModule({
+  declarations: [HeaderComponent],
   imports: [
     CommonModule,
-    FormsModule,
+    RouterLink,
     IonicModule,
-    HomePageRoutingModule,
-    HeaderModule
+    HeaderComponent,
+    AuthModule,
+
   ],
-  declarations: [HomePage]
+  exports: [HeaderComponent]
 })
-export class HomePageModule {}
+export class HeaderModule { }
+

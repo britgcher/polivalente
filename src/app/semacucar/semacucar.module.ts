@@ -5,6 +5,7 @@ import { IonicModule } from '@ionic/angular';
 import { SemacucarPageRoutingModule } from './semacucar-routing.module';
 import { SemacucarPage } from './semacucar.page';
 import { HeaderModule } from '../header/header.module';
+import { AuthModule } from '@angular/fire/auth';
 
 @NgModule({
   imports: [
@@ -13,6 +14,8 @@ import { HeaderModule } from '../header/header.module';
     IonicModule,
     SemacucarPageRoutingModule,
     HeaderModule,
+    SemacucarPage,
+    AuthModule
   ],
   declarations: [SemacucarPage]
 })

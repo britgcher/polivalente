@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { AuthModule } from '@angular/fire/auth';
 
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./home/home.module').then( m => m.HeaderModule)
   },
   {
     path: '',
@@ -19,10 +20,7 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
-  {
-    path: 'lowcarb',
-    loadChildren: () => import('./lowcarb/lowcarb.module').then( m => m.LowcarbPageModule)
-  },
+  
   {
     path: 'perfil',
     loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
@@ -30,7 +28,8 @@ const routes: Routes = [
   {
     path: 'semacucar',
     loadChildren: () => import('./semacucar/semacucar.module').then( m => m.SemacucarPageModule)
-  },  {
+  },
+  {
     path: 'receita',
     loadChildren: () => import('./receita/receita.module').then( m => m.ReceitaPageModule)
   },
@@ -43,7 +42,8 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
+    AuthModule
   ],
   exports: [RouterModule]
 })

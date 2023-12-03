@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { PerfilPageRoutingModule } from './perfil-routing.module';
 
 import { PerfilPage } from './perfil.page';
+import { AuthModule } from '@angular/fire/auth';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import { PerfilPage } from './perfil.page';
     FormsModule,
     IonicModule,
     PerfilPageRoutingModule,
-    NgModule
+    NgModule,
+    AuthModule
   ],
   declarations: [PerfilPage]
 })
