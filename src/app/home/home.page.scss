@@ -1,0 +1,457 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    box-shadow: none;
+    outline: 1px solid red;
+}
+
+:root {
+    --extra-small-size: 4px;
+    --small-size: 8px;
+    --medium-size: 16px;
+    --large-size: 32px;
+    --extra-large-size: 32px;
+    --font-color: black;
+}
+
+/* Pagina Inteira */
+#paginaprincipal {
+    background: #EFE4F6;
+    width: auto;
+}
+
+// Funcoes nativas do Ionic
+h1 {
+    color: black;
+    font-size: 30px;
+}
+
+
+h2 {
+    text-align: center;
+    height: auto;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+h2:hover {
+    text-align: start;
+    justify-content: left;
+    color: black;
+    font-weight: bold;
+}
+
+// Prototipo de botao
+// ion-button {
+//   background: #C9ADEB;
+//     --border-radius: 120px;
+//     color: black;
+//     font-weight: bold;
+//     box-shadow: none;
+//     transition: 0.7s;
+//     -moz-transition: all 0.2s;
+//     -webkit-transition: all 0.2s;
+//     transition: all 0.2s;
+//     height: 5vh;
+//     width: 50%;
+//     font-size: 15px;
+// }
+
+// ion-button:hover {
+//     --moz-transform: scale(1.2);
+//     --webkit-transition: all 0.2s;
+//     transition: all 0.2s;
+//     width: 60%;
+//     text-align: start;
+//     border-radius: 120px;
+//     justify-content: space-between;
+// }
+
+// ion-button img {
+//     display: none;
+// }
+
+// ion-button:hover img {
+//     display: flex;
+//     width: 37px;
+//     height: 37px;
+//     margin-left: 12px;
+// }
+
+// ion-button:hover+#acucar {
+//     width: 100%;
+//     height: 100%;
+//     display: block;
+//     text-align: left;
+//     justify-content: left;
+// }
+
+ion-col {
+    color: #473BA3;
+}
+
+ion-checkbox {
+    --size: 25px;
+    --checkbox-background-checked: #6815ec;
+    --checkbox-background: #EFE4F6;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+    color: black;
+}
+
+ion-checkbox::part(container) {
+    border-radius: 6px;
+    border: 2px solid #6815ec;
+}
+
+ion-checkbox:hover {
+    background-color: #D0BCE8;
+    text-align: left;
+    transition: 0.4s;
+}
+
+ion-icon {
+    width: 60px;
+    height: 150px;
+    vertical-align: middle;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #473BA3;
+}
+
+ion-modal {
+    --background: none;
+    --box-shadow: none;
+
+}
+
+ion-title {
+    color: black;
+    width: 200px;
+}
+
+/*Titulo*/
+#tituloid {
+    margin: 1%;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo {
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#divider {
+    background-color: #473BA3;
+    height: 4px;
+    border-radius: 90px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Meio do Site*/
+
+// Coluna E D
+.filtrar {
+    height: 67vh;
+}
+
+// Coluna D
+.iconebotao {
+    height: 6vh;
+}
+
+.iconebotao:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width:280px) {
+
+    .iconebotao {
+        width: 80%;
+    }
+
+    .iconebotao:hover {
+        transform: scale(1.1);
+    }
+}
+
+
+/* Estilos responsivos */
+
+// @media (min-width: 150px) and (max-width: 786px) {
+//     .filtrarbotao {
+//         height: 50px;
+//         width: 60px;
+//         scale: 0.75;
+//         margin-left: -4px;
+//     }
+
+//     .filtrarbotao:hover {
+//         transform: scale(1.1);
+//     }
+
+//     /* Ajuste do tamanho do ícone para telas de tamanho médio */
+//     .iconebotao {
+//         font-size: 1em;
+//     }
+// }
+
+
+// Coluna M
+#listareceitas {
+    --width: auto;
+}
+
+.imagemprincipal {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 175px;
+    height: 250px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagemprincipal:hover {
+    transform: scale(1.13);
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+
+/* Modal Filtrar */
+#caixamodalreceita {
+    margin: 5%;
+    padding: 15px;
+    scale: 0.88;
+    height: auto;
+    border-radius: 20px;
+    background: #D0BCE8;
+}
+
+#caixamodalreceitaopcoes {
+    height: auto;
+    margin: 3%;
+    padding: 10px;
+    background: #EFE4F6;
+    border-radius: 15px;
+}
+
+#titulotipo {
+    color: #473BA3;
+    font-weight: 500;
+}
+
+
+
+// MODAL RECEITA
+
+.cardzin {
+    --background: #D0BCE8;
+}
+
+#carddestaques {
+    width: 950px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #C294F8;
+}
+
+.imgreceitas {
+    width: 20vw;
+    height: 25vh;
+    margin: 20px;
+}
+
+#imagens {
+    width: 100%;
+    height: 100%;
+}
+
+.colcard {
+    height: 90%;
+    float: right;
+}
+
+.nomerec {
+    width: auto;
+    height: auto;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #473BA3;
+}
+
+.restri {
+    height: 100%;
+    margin: 5%;
+}
+
+.iconsrestr {
+    height: 40%;
+    width: 40%;
+    margin: 5%;
+}
+
+
+// Paginacçao
+
+#rownumerospagina {
+    margin-top: 1%;
+}
+
+#paginanumeros {
+    display: flex;
+}
+
+#tracoesquerdo,
+#tracodireito {
+    background-color: #473BA3;
+    height: 4px;
+    border-radius: 90px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5%;
+}
+
+#colunaiconeesquerda,
+#colunaiconedireita {
+    margin-top: 0.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#iconeesquerda,
+#iconedireita {
+    height: 30px;
+    width: 30px;
+    max-height: 40px;
+    max-width: 40px;
+    color: #473BA3;
+}
+
+#colunanumeros {
+    padding-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#numeros {
+    color: black;
+    font-weight: bold;
+    background-color: #C294F8;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 0.99; //parei aqui
+
+}
+
+@media (max-width:320px) {
+
+    #numeros {
+        scale: 0.8;
+    }
+
+    #iconeesquerda,
+    #iconedireita {
+       scale:0.8;
+    }
+}
+
+/* FOOTER */
+#footer {
+    background-color: #C294F8;
+    background: #C294F8;
+    color: #C294F8;
+    height: 20vh;
+    width: auto;
+    margin-top: 2%;
+}
+
+#colunasfooter {
+    height: auto;
+}
+
+#logofooter {
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+#logofooter:hover {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+#titulofooter {
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #473BA3;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+#redesfooter {
+    width: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #473BA3;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+#iconesredes {
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+#iconesredes:hover {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
